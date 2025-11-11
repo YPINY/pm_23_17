@@ -12,10 +12,10 @@ const path = require("path");
 
 // 📁 Шляхи до основних файлів
 const paths = {
-    html: { src: "app/html//*.html", dest: "dist/" },
-    scss: { src: "app/scss//*.scss", dest: "dist/css/" },
-    js:   { src: "app/js//*.js", dest: "dist/js/" },
-    img:  { src: "app/img//*.{png,jpg,jpeg,svg,gif,webp}", dest: "dist/img/" }
+    html: { src: "app/html/*.html", dest: "dist/" },
+    scss: { src: "app/scss/*.scss", dest: "dist/css/" },
+    js:   { src: "app/js/*.js", dest: "dist/js/" },
+    img:  { src: "app/img/*.{png,jpg,jpeg,svg,gif,webp}", dest: "dist/img/" }
 };
 
 // 📦 Шлях до Bootstrap (після npm install)
