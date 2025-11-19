@@ -1,2 +1,19 @@
 @use "sass:math";
 @use "../../node_modules/bootstrap/scss/bootstrap";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+.bc{
+    background-color: black;
+}
+.paper{
+    background-color: #fff;
+    height: 1400px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
