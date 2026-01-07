@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+%timeline-item {
+    margin-bottom: $base-spacing;
+    position: relative;
+    padding-left: $item-padding-left;
+    padding-bottom: $base-spacing - 5px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 8px;
+        height: 8px;
+        background-color: $primary-color;
+        border-radius: 0;
+        z-index: 2;
+    }
+}
+
+%timeline-item-heading {
+    font-size: $base-font-size * 0.8;
+    font-weight: 700;
+    color: $text-color-dark;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+%timeline-item-subheading {
+    font-family: $font-primary;
+    font-size: $base-font-size * 0.75;
+    color: $text-color-light;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    clear: both;
+}

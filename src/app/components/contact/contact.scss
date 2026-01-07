@@ -1,0 +1,31 @@
+@use '../../scss/variables' as *;
+@use '../../scss/mixins' as *;
+
+.contact-section {
+    padding: 10px $container-padding - 5px;
+    background: $section-bg;
+    margin-bottom: 0;
+}
+
+.contact-title {
+    color: $primary-color;
+    font-size: $base-font-size;
+    font-weight: 1000;
+    margin-bottom: 0;
+    letter-spacing: 0.08px;
+    flex-shrink: 0;
+}
+
+
+.contact-item {
+    @include flex-v-center;
+    gap: 6px;
+    color: $text-color-dark;
+    font-size: $base-font-size * 0.8;
+
+    i {
+        color: $primary-color;
+        width: 14px;
+        text-align: center;
+    }
+}

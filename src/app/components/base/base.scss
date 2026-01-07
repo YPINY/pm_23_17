@@ -1,0 +1,64 @@
+@use '../../scss/variables' as *;
+@use '../../scss/mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-secondary;
+    background-color: $body-bg;
+    color: $text-color;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0px;
+}
+
+.resume-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: $body-bg;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding-top: $base-spacing;
+}
+
+.main-content {
+    padding: 0;
+}
+
+// Загальні стилі для .section-header, оскільки вони використовуються в багатьох місцях
+.section-header {
+    @include flex-v-center;
+    margin-bottom: 15px;
+}
+
+.section-icon {
+    background-color: $primary-color;
+    color: $body-bg;
+    padding: 5px 4px;
+    border-radius: 3px;
+    margin-right: 6px;
+    font-size: 0.9rem;
+
+    &.orange {
+        background-color: $primary-color;
+    }
+}
+
+.section-title {
+    font-size: $base-font-size;
+    font-weight: 1000;
+    color: $text-color-dark;
+    letter-spacing: 0.1px;
+    position: relative;
+    flex: none;
+    top: 4px;
+
+    &::after {
+        display: none;
+    }
+}

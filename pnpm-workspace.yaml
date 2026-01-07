@@ -1,0 +1,8 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - es5-ext
+  - gifsicle
+  - mozjpeg
+  - optipng-bin
+  - pngquant-bin
+  - sharp

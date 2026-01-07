@@ -1,0 +1,209 @@
+@use '../../scss/variables' as *;
+@use '../../scss/mixins' as *;
+
+.header-section {
+    background: $body-bg;
+    padding: $base-spacing + 10px $container-padding;
+    display: flex;
+    align-items: flex-start;
+    gap: $base-spacing + 5px;
+    border-bottom: 1px solid $border-light;
+
+    .about-section {
+        padding: 0;
+        border: none;
+        margin-top: 15px;
+        position: relative;
+        padding: 0px 6px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 16px;
+            left: 160px;
+            right: 0;
+            height: 3px;
+            background-color: $primary-color;
+        }
+
+        p {
+            font-family: $font-primary;
+            color: $text-color-dark;
+            font-size: $base-font-size * 0.85;
+            line-height: 1.5;
+            letter-spacing: 0.1px;
+            margin-bottom: 12px;
+            text-align: justify;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 1px;
+                background-color: $divider-color;
+                top: 0.6em;
+                right: 100%;
+                margin-right: 10px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $divider-color;
+                top: 0.6em;
+                right: calc(100% + 10px);
+                transform: translate(50%, -50%);
+            }
+        }
+    }
+
+    // Стилі .section-header, специфічні для .header-section
+    .section-header {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 15px;
+        background-color: $section-bg;
+        border-radius: 10px;
+        padding: 5px 10px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 1px;
+            background-color: $divider-color;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 100%;
+            margin-right: 10px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $divider-color;
+            top: 50%;
+            right: calc(100% + 10px);
+            transform: translate(50%, -50%);
+        }
+    }
+
+    .section-icon {
+        background-color: $primary-color;
+        color: $body-bg;
+        padding: 5px 5px;
+        border-radius: 3px;
+        margin-right: 6px;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: $base-font-size;
+        font-weight: 1000;
+        color: $text-color-dark;
+        letter-spacing: 0.1px;
+        position: relative;
+        flex: none;
+        top: 4px;
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.name-section {
+    background: $section-bg;
+    padding: $base-spacing $container-padding 1px;
+    margin-bottom: 0px;
+    margin-top: $base-spacing;
+
+    h1 {
+        font-family: $font-primary;
+        font-size: 3rem;
+        font-weight: 300;
+        color: $text-color-dark;
+        margin-top: 8px;
+        display: flex;
+        align-items: baseline;
+        gap: 0.1em;
+        line-height: 0.5;
+        justify-content: center;
+    }
+}
+
+.profile-image {
+    flex-shrink: 0;
+    border-radius: 0px;
+    position: relative;
+    overflow: visible;
+    margin-top: $base-spacing;
+
+    img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+    }
+}
+
+.corner-decoration {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1.5px solid $primary-color-dark;
+    z-index: 10;
+
+    &.top-left {
+        top: -6px;
+        left: -6px;
+        border-right: none;
+        border-bottom: none;
+        border-top-left-radius: 11px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &.bottom-right {
+        bottom: -6px;
+        right: -6px;
+        border-left: none;
+        border-bottom-right-radius: 11px;
+        border-top-right-radius: 11px;
+        width: 12px;
+        height: 152px;
+        border-color: $divider-color;
+    }
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.name-section-p1 {
+    font-weight: 900;
+}
+
+.highlight {
+    color: $primary-color;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-family: $font-primary;
+    font-size: $base-font-size;
+    color: $text-color-dark;
+    letter-spacing: 8px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
