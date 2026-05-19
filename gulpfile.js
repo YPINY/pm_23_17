@@ -50,6 +50,12 @@ function json() {
     .pipe(browserSync.stream());
 }
 
+// Copy Bootstrap CSS
+function copyBootstrap() {
+  return src("node_modules/bootstrap/dist/css/bootstrap.min.css")
+    .pipe(dest("dist/css"));
+}
+
 export async function images(done) {
   return src("src/app/imgs/**/*.{png,jpg,jpeg}", {encoding: false})
     .pipe(dest("dist/imgs")) 
@@ -86,5 +92,5 @@ function watcher() {
 }
 
 // Export tasks
-export const build = series(html, styles, copyBootstrap, scripts, images);
+export const build = series(html, styles, copyBootstrap, scripts, json, images);
 export default series(build, serve, watcher);

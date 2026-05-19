@@ -5,6 +5,41 @@
     padding: 10px $container-padding - 5px;
     background: $section-bg;
     margin-bottom: 0;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    /* Override Bootstrap col classes for horizontal layout */
+    .col-lg-3,
+    .col-md-4,
+    .col-md-12,
+    .col-12 {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        width: auto;
+        max-width: none;
+    }
+
+    /* First item (title) - auto width */
+    .col-lg-3:first-child,
+    .col-md-12:first-child {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    /* Other items - flex equally */
+    .col-lg-3:not(:first-child),
+    .col-md-4:not(:first-child),
+    .col-12:not(:first-child) {
+        flex: 1 1 auto;
+        min-width: 150px;
+    }
 }
 
 .contact-title {
@@ -15,7 +50,6 @@
     letter-spacing: 0.08px;
     flex-shrink: 0;
 }
-
 
 .contact-item {
     @include flex-v-center;
