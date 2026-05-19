@@ -1,0 +1,44 @@
+@use 'variables' as *;
+
+@media (max-width: 992px) {
+    .three-column-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        margin: 10px;
+    }
+
+    .header-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-section,
+    .contact-section {
+        padding: 30px;
+    }
+
+    .column {
+        padding: 0 30px;
+    }
+
+    .three-column-section {
+        grid-template-columns: 1fr;
+        gap: $base-spacing;
+    }
+
+
+    .languages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-info {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+
+        </style>
+        @@include('components/base/head.html')
+    </head>
+    <body>
+        <div class="resume-container">
+            
+            @@include('components/header/header.html')
+
+            <div class="main-content">
+                
+                @@include('components/contact/contact.html')
+
+                <div class="three-column-section">
+                    
+                    @@include('components/columns/column-work.html')
+
+                    @@include('components/columns/column-education.html')
+
+                    @@include('components/columns/column-skills.html')
+                    
+                </div>
+            </div>
+        </div>
+        
+        @@include('components/scripts.html')
+    </body>
+</html>

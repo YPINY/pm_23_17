@@ -1,0 +1,146 @@
+{
+  "personalData": {
+    "firstName": "John",
+    "lastName": "Harrie",
+    "profession": "Graphic Designer",
+    "email": "john@yourwebsite.com",
+    "phone": "+4-756-822-5156",
+    "website": "www.yourwebsite.com",
+    "address": "1173 Valley Street Camden",
+    "profileImage": "imgs/profile.jpg",
+    "about": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ip"
+    ]
+  },
+  
+  "jobs": [
+    {
+      "id": 1,
+      "title": "WEB DESIGNER",
+      "date": "2018 - Present",
+      "company": "Company Name / Location",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "title": "GRAPHIC DESIGNER",
+      "date": "2015 - 2018",
+      "company": "Company Name / Location",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "title": "MARKETING MANAGER",
+      "date": "2010 - 2015",
+      "company": "Company Name / Location",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum",
+      "isActive": false
+    }
+  ],
+  
+  "skills": [
+    {
+      "name": "Microsoft Word",
+      "level": 90
+    },
+    {
+      "name": "Web Designing",
+      "level": 80
+    },
+    {
+      "name": "Graphic Designing",
+      "level": 85
+    },
+    {
+      "name": "Afinity Designer",
+      "level": 70
+    },
+    {
+      "name": "MS Powerpoint",
+      "level": 75
+    }
+  ],
+  
+  "education": [
+    {
+      "id": 1,
+      "title": "MASTER OF CREATIVE ARTS",
+      "university": "University Name",
+      "date": "2018 - Present",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod facilisis.",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "title": "MASTER OF DESIGN",
+      "university": "University Name",
+      "date": "2015 - 2017",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod facilisis.",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "title": "MARKETING OFFICER",
+      "university": "University Name",
+      "date": "2010 - 2012",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod facilisis.",
+      "isActive": false
+    }
+  ],
+  
+  "awards": [
+    {
+      "id": 1,
+      "title": "BEST UI DESIGNER AWARD",
+      "company": "Company Name",
+      "date": "2015 - 2016",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "title": "BEST UI DESIGNER AWARD",
+      "company": "Company Name",
+      "date": "2013 - 2014",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "isActive": false
+    }
+  ],
+  
+  "references": [
+    {
+      "id": 1,
+      "name": "MICHAEL R, MAGEE",
+      "address": "4418 Bobcat Drive",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+    },
+    {
+      "id": 2,
+      "name": "TRAVIS M. GODINEZ",
+      "address": "2755 Oakmound Drive",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+    }
+  ],
+  
+  "languages": [
+    {
+      "name": "Spanish & French",
+      "level": 65
+    },
+    {
+      "name": "German & Japanese",
+      "level": 70
+    },
+    {
+      "name": "English & Portuguese",
+      "level": 85
+    },
+    {
+      "name": "Persian & Quechua",
+      "level": 68
+    }
+  ]
+}
