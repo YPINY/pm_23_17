@@ -86,5 +86,5 @@ function watcher() {
 }
 
 // Export tasks
-export const build = series(html, styles, scripts, images);
+export const build = series(html, styles, copyBootstrap, scripts, images);
 export default series(build, serve, watcher);
