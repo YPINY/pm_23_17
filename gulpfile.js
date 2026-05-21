@@ -59,15 +59,7 @@ function copyBootstrap() {
 export async function images(done) {
   return src("src/app/imgs/**/*.{png,jpg,jpeg}", {encoding: false})
     .pipe(dest("dist/imgs")) 
-    // .pipe(
-    //   sharp({
-    //     formats: [
-    //       { format: "jpeg", quality: 80 },
-    //       { format: "webp", quality: 80 }
-    //     ]
-    //   })
-    // )
-    // .pipe(dest("dist/imgs"))
+
      .on("end", done)  
     .on("error", done);
 }
